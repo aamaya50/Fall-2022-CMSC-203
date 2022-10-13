@@ -1,3 +1,17 @@
+/*
+* Class: CMSC 203
+* Instructor: Professor Ping-Wei Tsai
+*
+* Description: This is a class used to hold scores and subtract or add to them
+* Due: 10/13/2022
+*
+* Platform/Compiler: Java/Eclipse
+*I pledge that I have completed the programming assignment independently. I have no copied the code from a student or any source. I have not given my code to any student.
+* Programmer: Anthony Amaya
+*
+*/
+
+
 import java.util.ArrayList;
 
 public class GradeBook
@@ -62,6 +76,28 @@ public class GradeBook
          }
       }
       return smallest;
+   }
+   
+   
+   /**
+    * Gets the score size
+    * @return the score size
+    */
+   public int getScoreSize()
+   {
+	   return scoresSize;
+   }
+   
+   public String toString()
+   {
+	   String str = "";
+	   
+	   for(int i = 0; i < scoresSize; i++)
+	   {
+		   str += scores[i] + " ";
+	   }
+	   
+	   return str;
    }
 
    /**
